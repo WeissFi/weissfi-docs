@@ -135,6 +135,15 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Contribute',
+          items: [
+            {
+              label: 'Edit the docs on GitHub',
+              href: 'https://github.com/WeissFi/weissfi-docs',
+            },
+          ],
+        }
       ],
       copyright: `<img src="/img/logo-rounded.svg" alt="WeissFi Logo" style="height:40px;margin-top:10px;" /><br/>© ${new Date().getFullYear()} WeissFi. All rights reserved.`,
     },
