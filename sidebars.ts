@@ -21,7 +21,6 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'faq',
-        'links',
       ],
     },
   ],
