@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'WeissFi Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Borrow and earn with full control — powered by Sui.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.weiss.finance',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'WeissFi', // Usually your GitHub org/user name.
+  projectName: 'WeissFi', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -136,12 +136,7 @@ const config: Config = {
           ],
         },
       ],
-    copyright: 
-      `
-        <img src="/img/logo-rounded.svg" alt="WeissFi Logo" style="height:40px;margin-top:10px;" />
-        <br/>
-        © ${new Date().getFullYear()} WeissFi. All rights reserved.
-      `,    
+      copyright: `<img src="/img/logo-rounded.svg" alt="WeissFi Logo" style="height:40px;margin-top:10px;" /><br/>© ${new Date().getFullYear()} WeissFi. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
