@@ -109,6 +109,10 @@ const config: Config = {
               to: '/docs/fees',
             },
             {
+              label: 'Vault Drop Campaign',
+              to: '/docs/vault-drop-campaign',
+            },
+            {
               label: 'FAQ',
               to: '/docs/fees',
             },

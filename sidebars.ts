@@ -13,6 +13,7 @@ const sidebars: SidebarsConfig = {
         'fees',
         'redemption',
         'points-system',
+        'vault-drop-campaign',
       ],
     },
     {
