@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container text-center">
-        <Heading as="h1" className={clsx('text-5xl font-black', styles.title)}>
+        <Heading as="h1" className={clsx('text-5xl ', styles.title)}>
           Welcome to <span className="text-red-600">Weiss</span>Fi
         </Heading>
         <p className={clsx('mt-4 text-lg', styles.subtitle)}>
