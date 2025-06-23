@@ -4,6 +4,10 @@ import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
+import RoadmapSection from './RoadmapSection';
+import FeedbackSection from './FeedbackSection';
+import ResourcesSection from './ResourcesSection';
+
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
@@ -77,11 +81,11 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--6', styles.feature)}>
-      <Link to={link} className={styles.featureLink}>
+      <Link to={link} className={styles.card}>
         <div className="text--center">
           <Svg className={styles.featureSvg} role="img" />
         </div>
-        <div className="text--center padding-horiz--md">
+        <div className={clsx('text--center', styles.cardContent)}>
           <Heading as="h3">{title}</Heading>
           <p>{description}</p>
         </div>
@@ -102,6 +106,9 @@ export default function HomepageFeatures(): ReactNode {
             <Feature key={idx} {...props} />
           ))}
         </div>
+        {/* <RoadmapSection />
+        <FeedbackSection />
+        <ResourcesSection /> */}
       </div>
     </section>
   );
