@@ -61,7 +61,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_online_information.svg').default,
     description: (
       <>
-        Access audits, GitHub, official announcements, and community channels.
+        Learn how WEIS is redeemed for collateral and how this mechanism ensures the stablecoin's peg.
       </>
     ),
     link: '/docs/redemption',
