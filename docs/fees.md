@@ -9,7 +9,7 @@
 ### 📌 Borrowing Fee
 
 - **0.75% fee** on the borrowed amount.
-- Applied **each time** the borrower draws additional WEIS from their Trove.
+- Applied **each time** the borrower draws additional DORI from their Trove.
 - The fee is **added to the debt**, not deducted from the borrowed amount.
 - **100% → Allocated to the WeissFi team** for protocol sustainability.
 
@@ -59,7 +59,7 @@
 
 ## Redemption Fees
 
-- Redemptions occur when **WEIS trades below $1**.
+- Redemptions occur when **DORI trades below $1**.
 - Fees are based on a dynamic variable called **`baseRate`**.
 
 ### Redemption Fee Formula:
@@ -76,7 +76,7 @@
 
 | **Fee Type**               | **Details**                                                                 |
 |----------------------------|------------------------------------------------------------------------------|
-| **Borrowing Fee**          | 0.75% on each WEIS draw, added to debt.                                     |
+| **Borrowing Fee**          | 0.75% on each DORI draw, added to debt.                                     |
 | **Upfront Interest**       | 7 days of interest paid upfront at loan creation or interest rate change.   |
 | **Ongoing Interest**       | Set by the borrower, accrues over time.                                     |
 | **Interest Modifications** | Each modification adds 7 days of interest to debt.                          |
