@@ -4,7 +4,7 @@
 
 ### What is WeissFi?
 
-WeissFi is a decentralized finance (DeFi) protocol built on the **Sui blockchain** that allows users to **borrow WEIS** against their SUI holdings while setting their **own interest rates**.  
+WeissFi is a decentralized finance (DeFi) protocol built on the **Sui blockchain** that allows users to **borrow DORI** against their SUI holdings while setting their **own interest rates**.  
 It also enables users to **earn yield** through Stability Pools, all while benefiting from **transparent and efficient liquidations**.
 
 ---
@@ -20,16 +20,16 @@ WeissFi introduces **user-controlled interest rates**, **efficient liquidations*
 ### How do I borrow with WeissFi?
 
 1. **Deposit SUI** as collateral.  
-2. **Choose how much WEIS** you want to borrow (keep an eye on your **Loan-to-Value ratio**).  
+2. **Choose how much DORI** you want to borrow (keep an eye on your **Loan-to-Value ratio**).  
 3. **Set your preferred interest rate** — higher rates lower your **risk of redemption**.  
-4. **Confirm & sign** the transaction to receive WEIS in your wallet.  
+4. **Confirm & sign** the transaction to receive DORI in your wallet.  
 5. **Manage your loan** anytime via the dashboard.
 
 ---
 
 ### What is LTV?
 
-**LTV (Loan-to-Value)** is the ratio of borrowed WEIS to the USD value of your collateral.
+**LTV (Loan-to-Value)** is the ratio of borrowed DORI to the USD value of your collateral.
 
 - 📈 A **higher LTV** increases the **risk of liquidation**.  
 - 📉 A **lower LTV** provides more **security**.
@@ -65,7 +65,7 @@ Yes — just go to the **dashboard** and click **Repay Loan**.
 
 ### How do I earn with WeissFi?
 
-By depositing **WEIS into Stability Pools**, you earn:
+By depositing **DORI into Stability Pools**, you earn:
 
 - **Interest Payments** – Borrowers pay interest, and **50% of that is distributed to depositors**.
 - **Liquidation Gains** – When a borrower is liquidated, depositors receive their **SUI collateral at a ~2.5% discount**.
@@ -75,13 +75,13 @@ By depositing **WEIS into Stability Pools**, you earn:
 ### Can I withdraw at any time?
 
 **Yes.**  
-You can withdraw your WEIS at any time — **no lockups, no delays**.
+You can withdraw your DORI at any time — **no lockups, no delays**.
 
 ---
 
 ### What are Stability Pools?
 
-**Stability Pools** are decentralized liquidity pools where users **deposit WEIS** to earn rewards from:
+**Stability Pools** are decentralized liquidity pools where users **deposit DORI** to earn rewards from:
 
 - **Borrower interest payments**
 - **Liquidation events**
@@ -94,9 +94,9 @@ Each Stability Pool is **tied to a specific collateral** (e.g., **SUI**), allowi
 
 ### What are redemptions?
 
-**Redemptions** ensure that **WEIS maintains its $1 peg** by allowing users to **swap WEIS for SUI at face value**.
+**Redemptions** ensure that **DORI maintains its $1 peg** by allowing users to **swap DORI for SUI at face value**.
 
-- If WEIS falls below $1, **arbitrageurs redeem WEIS for SUI**, reducing supply and helping restore the peg.
+- If DORI falls below $1, **arbitrageurs redeem DORI for SUI**, reducing supply and helping restore the peg.
 - Redemptions **start with borrowers paying the lowest interest rates**.
 
 ---
@@ -114,13 +114,13 @@ Each Stability Pool is **tied to a specific collateral** (e.g., **SUI**), allowi
 **Yes!**
 
 - **Set a higher interest rate** to move further down the redemption queue.
-- **Monitor WEIS price** — if WEIS is trading **above $1**, redemptions do **not occur**.
+- **Monitor DORI price** — if DORI is trading **above $1**, redemptions do **not occur**.
 
 ---
 
 ### Is there a fee during redemptions?
 
-Yes — a **small fee (~0.5%)** is applied when someone redeems WEIS for SUI.
+Yes — a **small fee (~0.5%)** is applied when someone redeems DORI for SUI.
 
 - The fee is **not paid by you**, but is **retained in your Trove** (borrower position).
 - This makes redemptions **fairer** than in other systems.
@@ -135,10 +135,10 @@ You can adjust your interest rate **at any time** in the dashboard.
 
 ---
 
-### What happens if WEIS trades below or above $1?
+### What happens if DORI trades below or above $1?
 
-- If **WEIS trades below $1**, **redemptions increase** to reduce supply and bring the price back to peg.
-- If **WEIS trades above $1**, **borrowers lower their interest rates**, increasing borrowing and restoring the peg.
+- If **DORI trades below $1**, **redemptions increase** to reduce supply and bring the price back to peg.
+- If **DORI trades above $1**, **borrowers lower their interest rates**, increasing borrowing and restoring the peg.
 
 ---
 
