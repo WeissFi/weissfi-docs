@@ -102,21 +102,30 @@ const config: Config = {
             },
             {
               label: 'Redemption',
-              to: '/docs/fees',
+              to: '/docs/redemption',
             },
             {
               label: 'Points System',
-              to: '/docs/fees',
+              to: '/docs/points-system',
             },
             {
               label: 'Vault Drop Campaign',
               to: '/docs/vault-drop-campaign',
             },
+          ],
+        },
+        {
+          title: 'Ressources',
+          items: [
             {
               label: 'FAQ',
-              to: '/docs/fees',
+              to: '/docs/faq',
             },
-          ],
+            {
+              label: 'Mainnet Package IDs',
+              to: '/docs/mainnet-package',
+            },
+          ]
         },
         {
           title: 'Community',
