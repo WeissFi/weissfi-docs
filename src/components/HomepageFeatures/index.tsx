@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_transfer_money.svg').default,
     description: (
       <>
-        Learn how to open a vault, borrow WEIS against SUI, and set your own interest rate. Flexible and non-custodial.
+        Learn how to open a vault, borrow DORI against SUI, and set your own interest rate. Flexible and non-custodial.
       </>
     ),
     link: '/docs/borrow',
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_savings.svg').default,
     description: (
       <>
-        Stake your WEIS or provide liquidity to earn rewards and support the protocol’s stability.
+        Stake your DORI or provide liquidity to earn rewards and support the protocol’s stability.
       </>
     ),
     link: '/docs/earn',

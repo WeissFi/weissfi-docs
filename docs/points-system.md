@@ -1,6 +1,6 @@
 # Points System
 
-The **WeissFi Points System** rewards users for borrowing and staking. The longer you keep debt open or your WEIS staked, the faster your points grow — with different formulas for each activity.
+The **WeissFi Points System** rewards users for borrowing and staking. The longer you keep debt open or your DORI staked, the faster your points grow — with different formulas for each activity.
 
 Points are used to measure user contribution and may be used in future reward distributions or protocol incentives.
 
