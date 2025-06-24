@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
         'earn',
         'fees',
         'redemption',
+        'oracles',
         'points-system',
         'vault-drop-campaign',
       ],
