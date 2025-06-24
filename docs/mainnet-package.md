@@ -15,6 +15,7 @@ Below are the key package and shared object addresses for WeissFi on Sui mainnet
 | Surplus Pool | [0x8db2f2150498d9f0f25796daf890701b6a1cce171a97e25c1bff7a3a06731939](https://suiscan.xyz/mainnet/object/0x8db2f2150498d9f0f25796daf890701b6a1cce171a97e25c1bff7a3a06731939) |
 | Vault Store | [0xda5c2b3915dd87a20678a55fbf1dbd918461b96967951c5225b1243ef177c87f](https://suiscan.xyz/mainnet/object/0xda5c2b3915dd87a20678a55fbf1dbd918461b96967951c5225b1243ef177c87f) |
 | Stability Pool | [0xfe9bed337b3880bb3eb157f779a600332bb48da14fd04ae20ec8974ce60712ac](https://suiscan.xyz/mainnet/object/0xfe9bed337b3880bb3eb157f779a600332bb48da14fd04ae20ec8974ce60712ac) |
+| FlowX Liquidity Pool | [0xda208de7838d4922c3e0ced4e81ddbc94f3e4e6c2e3acf97194151dc1639424b](https://suiscan.xyz/mainnet/object/0xda208de7838d4922c3e0ced4e81ddbc94f3e4e6c2e3acf97194151dc1639424b) |
 
 ## Token Types
 
