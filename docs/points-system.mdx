@@ -1,5 +1,7 @@
 # Points System
 
+import PointsCalculator from '@site/src/components/PointsCalculator';
+
 The **WeissFi Points System** rewards users for borrowing and staking. The longer you keep debt open or your DORI staked, the faster your points grow — with different formulas for each activity.
 
 Points are used to measure user contribution and may be used in future reward distributions or protocol incentives.
@@ -16,18 +18,18 @@ Points are used to measure user contribution and may be used in future reward di
 | Duration | Points Earned |
 |----------|----------------|
 | 1 day    | 2              |
-| 7 days   | 75             |
-| 30 days  | 827            |
-| 90 days  | 4,440          |
+| 7 days   | 55             |
+| 30 days  | 649            |
+| 90 days  | 4,200          |
 
 ### Staking Points (Example with $1,000 Staked)
 
 | Duration | Points Earned |
 |----------|----------------|
 | 1 day    | 6              |
-| 7 days   | 112            |
-| 30 days  | 659            |
-| 90 days  | 2,301          |
+| 7 days   | 91             |
+| 30 days  | 702            |
+| 90 days  | 3,267          |
 
 ---
 
@@ -47,6 +49,10 @@ vaultPoints = doc.vaultPoints + (lastDebtValue / 1e9) × (vaultDays)^1.7 × 0.00
 
 vaultPoints = 2 × (days)^1.7
 
+For example, keeping **$1,000** of debt for **30 days** gives:
+
+1000 × 30^1.7 × 1 × 0.002 = **648.838** points
+
 ---
 
 ## 🔢 Staking Points Formula
@@ -65,6 +71,15 @@ stakingPoints = doc.stakingPoints + (lastStakingValue / 1e9) × (stakingDays)^1.
 **Simplified (with $1,000 staked):**
 
 stakingPoints = 6 × (days)^1.4
+
+Staking **$1,000** for **30 days** results in:
+
+1000 × 30^1.4 × 1.2 × 0.005 = **701.651** points
+
+## 📅 Monthly Points Calculator
+
+
+<PointsCalculator />
 
 
 ---
