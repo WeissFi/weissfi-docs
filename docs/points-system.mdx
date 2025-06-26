@@ -31,6 +31,15 @@ Points are used to measure user contribution and may be used in future reward di
 | 30 days  | 702            |
 | 90 days  | 3,267          |
 
+### FlowX Points (Example with $1,000 Liquidity)
+
+| Duration | Points Earned |
+|----------|----------------|
+| 1 day    | 15             |
+| 7 days   | 735            |
+| 30 days  | 13,500         |
+| 90 days  | 121,500        |
+
 ---
 
 ## 🔢 Vault Points Formula
@@ -75,6 +84,27 @@ stakingPoints = 6 × (days)^1.4
 Staking **$1,000** for **30 days** results in:
 
 1000 × 30^1.4 × 1.2 × 0.005 = **701.651** points
+
+---
+
+## 🔢 FlowX Points Formula
+
+flowXPoints += (liquidity / 1e9) × (days)^2.0 × multiplier × 0.015
+
+Parameters:
+- **liquidity** – amount of liquidity provided (scaled from wei)
+- **days** – number of days of liquidity provision
+- **multiplier** – event bonus multiplier (default `1.0`)
+- **Exponent** – `2.0` (quadratic growth rewards longer commitment)
+- **Scaling factor** – `0.015` (highest reward rate across all point types)
+
+**Simplified (with $1,000 liquidity, multiplier 1.0):**
+
+flowXPoints = 15 × (days)^2.0
+
+Providing **$1,000** of liquidity for **30 days** results in:
+
+1000 × 30^2.0 × 1 × 0.015 = **13,500** points
 
 ## 📅 Monthly Points Calculator
 
