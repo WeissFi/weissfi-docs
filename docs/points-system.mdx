@@ -44,12 +44,12 @@ Points are used to measure user contribution and may be used in future reward di
 
 ## 🔢 Vault Points Formula
 
-vaultPoints = doc.vaultPoints + (lastDebtValue / 1e9) × (vaultDays)^1.7 × 0.002
+vaultPoints = doc.vaultPoints + lastDebtValue × (vaultDays)^1.7 × 0.002
 
 **Variables:**
 
 - `doc.vaultPoints`: previously accumulated points  
-- `lastDebtValue`: your vault debt (scaled to dollars using 1e9)  
+- `lastDebtValue`: your vault debt in SUI (1 SUI = 1e9 MIST)
 - `vaultDays`: number of active borrowing days  
 - `0.002`: vault multiplier  
 - `1.7`: exponential growth factor  
@@ -66,13 +66,13 @@ For example, keeping **$1,000** of debt for **30 days** gives:
 
 ## 🔢 Staking Points Formula
 
-stakingPoints = doc.stakingPoints + (lastStakingValue / 1e9) × (stakingDays)^1.4 × 1.2 × 0.005
+stakingPoints = doc.stakingPoints + lastStakingValue × (stakingDays)^1.4 × 1.2 × 0.005
 
 
 **Variables:**
 
 - `doc.stakingPoints`: previously accumulated staking points  
-- `lastStakingValue`: amount staked (scaled to dollars using 1e9)  
+- `lastStakingValue`: amount staked in SUI (1 SUI = 1e9 MIST)
 - `stakingDays`: number of staking days  
 - `1.2 × 0.005`: staking multiplier  
 - `1.4`: exponential growth factor  
@@ -89,10 +89,10 @@ Staking **$1,000** for **30 days** results in:
 
 ## 🔢 FlowX Points Formula
 
-flowXPoints += (liquidity / 1e9) × (days)^2.0 × multiplier × 0.015
+flowXPoints += liquidity × (days)^2.0 × multiplier × 0.015
 
 Parameters:
-- **liquidity** – amount of liquidity provided (scaled from wei)
+- **liquidity** – amount of liquidity provided in MIST
 - **days** – number of days of liquidity provision
 - **multiplier** – event bonus multiplier (default `1.0`)
 - **Exponent** – `2.0` (quadratic growth rewards longer commitment)
