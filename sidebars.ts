@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'faq',
         'mainnet-package',
+        'media-kit',
       ],
     },
   ],
