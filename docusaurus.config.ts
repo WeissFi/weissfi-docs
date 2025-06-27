@@ -125,6 +125,10 @@ const config: Config = {
               label: 'Mainnet Package IDs',
               to: '/docs/mainnet-package',
             },
+            {
+              label: 'Media Kit',
+              to: '/docs/media-kit',
+            },
           ]
         },
         {
