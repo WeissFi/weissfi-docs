@@ -19,8 +19,11 @@
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
+  object-fit: contain;
+  image-rendering: auto;
+  display: inline-block;
 }
 
 .card {
