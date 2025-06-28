@@ -10,8 +10,7 @@ import ResourcesSection from './ResourcesSection';
 
 type FeatureItem = {
   title: string;
-  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
-  imageUrl?: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
   link: string;
 };
@@ -19,7 +18,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Borrow',
-    imageUrl: 'https://weissfi.s3.eu-west-3.amazonaws.com/vault-no-bg.svg',
+    Svg: require('@site/static/img/undraw_transfer_money.svg').default,
     description: (
       <>
         Learn how to open a vault, borrow DORI against SUI, and set your own interest rate. Flexible and non-custodial.
@@ -29,8 +28,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Earn',
-    // Svg: require('@site/static/img/undraw_savings.svg').default,
-    imageUrl: 'https://weissfi.s3.eu-west-3.amazonaws.com/dori-staking-no-bg.svg',
+    Svg: require('@site/static/img/undraw_savings.svg').default,
     description: (
       <>
         Stake your DORI or provide liquidity to earn rewards and support the protocol’s stability.
@@ -40,7 +38,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Points System',
-    imageUrl: 'https://weissfi.s3.eu-west-3.amazonaws.com/points.svg',
+    Svg: require('@site/static/img/undraw_data_points.svg').default,
     description: (
       <>
         Discover how points are calculated for vaults and staking. Long-term activity matters more than short-term boosts.
@@ -50,7 +48,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Fees',
-    imageUrl: 'https://weissfi.s3.eu-west-3.amazonaws.com/fees.svg',
+    Svg: require('@site/static/img/undraw_printing_invoices.svg').default,
     description: (
       <>
         Understand the platform fees.
@@ -60,7 +58,7 @@ const FeatureList: FeatureItem[] = [
   },
     {
     title: 'Redemption',
-    imageUrl: 'https://weissfi.s3.eu-west-3.amazonaws.com/redemption.svg',
+    Svg: require('@site/static/img/undraw_online_information.svg').default,
     description: (
       <>
         Learn how $DORI is redeemed for collateral and how this mechanism ensures the stablecoin's peg.
@@ -70,7 +68,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'FAQ',
-    imageUrl: 'https://weissfi.s3.eu-west-3.amazonaws.com/faq.svg',
+    Svg: require('@site/static/img/undraw_searching.svg').default,
     description: (
       <>
         Quick answers to common questions about borrowing, staking, liquidation, and more.
@@ -80,16 +78,12 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, Svg, imageUrl, description, link }: FeatureItem) {
+function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--6', styles.feature)}>
       <Link to={link} className={styles.card}>
         <div className="text--center">
-          {Svg ? (
-            <Svg className={styles.featureSvg} role="img" />
-          ) : imageUrl ? (
-            <img src={imageUrl} className={styles.featureSvg} alt={title} />
-          ) : null}
+          <Svg className={styles.featureSvg} role="img" />
         </div>
         <div className={clsx('text--center', styles.cardContent)}>
           <Heading as="h3">{title}</Heading>
