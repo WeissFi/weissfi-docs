@@ -25,6 +25,8 @@ const sidebars: SidebarsConfig = {
         'faq',
         'mainnet-package',
         'media-kit',
+        'roadmap-feedback',
+        'analytics',
       ],
     },
   ],
