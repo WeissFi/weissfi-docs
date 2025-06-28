@@ -129,6 +129,14 @@ const config: Config = {
               label: 'Media Kit',
               to: '/docs/media-kit',
             },
+            {
+              label: 'Roadmap Feedback',
+              to: '/roadmap-feedback'
+            },
+            {
+              label: 'Analytics Dashboard',
+              to: '/docs/analytics'
+            }
           ]
         },
         {

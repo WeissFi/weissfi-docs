@@ -14,7 +14,7 @@ const sidebars: SidebarsConfig = {
         'redemption',
         'oracles',
         'points-system',
-        'vault-drop-campaign',
+        // 'vault-drop-campaign',
       ],
     },
     {

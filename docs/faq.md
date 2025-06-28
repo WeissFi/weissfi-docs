@@ -1,6 +1,6 @@
 # FAQ 
 
-# General Questions
+## General Questions
 
 ### What is WeissFi?
 

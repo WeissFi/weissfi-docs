@@ -8,7 +8,7 @@ Points are used to measure user contribution and may be used in future reward di
 
 ---
 
-## 📊 Summary
+## Summary
 
 - $1,000 of **vault debt** and $1,000 **staked** both earn points — but vault debt compounds faster over time.
 - Below are example point gains for both actions:
@@ -42,7 +42,7 @@ Points are used to measure user contribution and may be used in future reward di
 
 ---
 
-## 🔢 Vault Points Formula
+## Vault Points Formula
 
 vaultPoints = doc.vaultPoints + lastDebtValue × (vaultDays)^1.7 × 0.002
 
@@ -64,7 +64,7 @@ For example, keeping **$1,000** of debt for **30 days** gives:
 
 ---
 
-## 🔢 Staking Points Formula
+## Staking Points Formula
 
 stakingPoints = doc.stakingPoints + lastStakingValue × (stakingDays)^1.4 × 1.2 × 0.005
 
@@ -87,7 +87,7 @@ Staking **$1,000** for **30 days** results in:
 
 ---
 
-## 🔢 FlowX Points Formula
+## FlowX Points Formula
 
 flowXPoints += liquidity × (days)^2.0 × multiplier × 0.015
 
@@ -106,7 +106,7 @@ Providing **$1,000** of liquidity for **30 days** results in:
 
 1000 × 30^2.0 × 1 × 0.015 = **13,500** points
 
-## 📅 Monthly Points Calculator
+## Monthly Points Calculator
 
 
 <PointsCalculator />
@@ -114,7 +114,7 @@ Providing **$1,000** of liquidity for **30 days** results in:
 
 ---
 
-## ⚖️ Vault vs Staking Comparison
+## Vault vs Staking Comparison
 
 - **Staking** gives higher points **early**.
 - **Vaults** outperform over **longer durations**.
@@ -122,14 +122,14 @@ Providing **$1,000** of liquidity for **30 days** results in:
 
 ---
 
-## 🔁 Points Accumulation
+## Points Accumulation
 
 - Points **accumulate over time** and are saved on-chain.
 - You can pause and resume borrowing or staking — accumulation continues from the last known state.
 
 ---
 
-## 🧠 To Summarize
+## To Summarize
 
 - Vaults reward **long-term borrowing** with exponential point scaling.
 - Staking is ideal for **short-to-medium-term** yield optimization.

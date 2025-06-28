@@ -1,6 +1,6 @@
 # Borrow
 
-# How Does Borrowing Work?
+## How Does Borrowing Work?
 
 **WeissFi** enables users to borrow the **DORI** stablecoin against their **SUI** holdings with **user-defined interest rates**. Unlike traditional DeFi lending platforms, WeissFi gives borrowers **full control** over the interest they pay, making it a flexible and capital-efficient borrowing solution.
 
@@ -15,7 +15,7 @@
 
 ---
 
-# How to Borrow (Step-by-Step)
+## How to Borrow (Step-by-Step)
 
 ### Step 1: Enter the Collateral Amount
 
@@ -51,9 +51,9 @@
 
 ---
 
-# Glossary
+## Glossary
 
-## Loan-to-Value (LTV) Ratio
+### Loan-to-Value (LTV) Ratio
 
 **Definition**: The ratio between the amount of **DORI borrowed** and the **deposited collateral** (in USD).
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-## Liquidation Price
+### Liquidation Price
 
 **Definition**: The SUI price at which your collateral is no longer sufficient to cover your borrowed DORI.
 
@@ -99,7 +99,7 @@ $$
 
 ---
 
-## Redemption
+### Redemption Mode 
 
 If DORI loses its $1 peg, holders can **redeem DORI for SUI** via the redemption mechanism.
 
@@ -111,9 +111,11 @@ If DORI loses its $1 peg, holders can **redeem DORI for SUI** via the redemption
 > - ⚠️ Lower rates = higher chance of redemption  
 > - ✅ Higher rates = safer from redemption
 
+[→ learn more about redemption mode](/docs/redemption)
+
 ---
 
-# To Summarize
+## To Summarize
 
 - ✅ **Keep your LTV low** to avoid liquidation.  
 - ⚖️ **Choose a balanced interest rate** to minimize redemption risk.  

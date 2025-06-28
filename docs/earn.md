@@ -1,6 +1,6 @@
 # Earn
 
-# How Does Earn Work?
+## How Does Earn Work?
 
 **WeissFi** allows users to earn sustainable yield by depositing **DORI** into **Stability Pools**. Unlike traditional lending protocols that rely on inflationary token rewards, WeissFi provides **real yield** generated from borrower interest payments and liquidation gains.
 
@@ -20,7 +20,7 @@
 
 ---
 
-# How to Earn DORI Rewards?
+## How to Earn DORI Rewards?
 
 ### Step 1: Deposit DORI
 
@@ -37,23 +37,23 @@ Withdraw your rewards anytime, or reinvest them to maximize your earnings.
 
 ---
 
-# Glossary
+## Glossary
 
-## Stability Pool
+### Stability Pool
 
 A pool where users deposit **DORI** to earn rewards from borrower interest and liquidations.
 
-## Liquidation Gains
+### Liquidation Gains
 
 When a borrower is liquidated, depositors receive their collateral (**SUI**) at a discount, increasing overall returns.
 
-## Real Yield
+### Real Yield
 
 A yield model where rewards come from **actual protocol revenue**, instead of artificial token emissions.
 
 ---
 
-# To Summarize
+## To Summarize
 
 - 💸 **Passive Income** – Earn sustainable yield from borrower interest payments and liquidations.  
 - 🧠 **Strategic Exposure** – Choose your preferred collateral pool based on your risk appetite.  
