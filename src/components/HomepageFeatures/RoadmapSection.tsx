@@ -7,12 +7,12 @@ export default function RoadmapSection() {
   return (
     <div className={styles.roadmapSection}>
       <Heading as="h2" className="text--center margin-bottom--md">
-        Roadmap
+        Roadmap & Feedback
       </Heading>
       <div className="text--center">
-        <p>Check our progress and upcoming features on Trello.</p>
-        <Link to="https://trello.com/b/xyz123/weissfi-roadmap" target="_blank">
-          View Roadmap
+        <p>Check our progress and leave feedback on FeatureBase.</p>
+        <Link to="https://weissfinance.featurebase.app/" target="_blank">
+          FeatureBase Board
         </Link>
       </div>
     </div>
