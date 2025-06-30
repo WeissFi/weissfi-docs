@@ -108,10 +108,10 @@ const config: Config = {
               label: 'Points System',
               to: '/docs/points-system',
             },
-            {
-              label: 'Vault Drop Campaign',
-              to: '/docs/vault-drop-campaign',
-            },
+            // {
+            //   label: 'Vault Drop Campaign',
+            //   to: '/docs/vault-drop-campaign',
+            // },
           ],
         },
         {
