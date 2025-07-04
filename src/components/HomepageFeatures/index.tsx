@@ -4,10 +4,6 @@ import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-import RoadmapSection from './RoadmapSection';
-import FeedbackSection from './FeedbackSection';
-import ResourcesSection from './ResourcesSection';
-
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
@@ -51,7 +47,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_printing_invoices.svg').default,
     description: (
       <>
-        Understand the platform fees.
+        Understand how protocol fees are shared: from interest paid by borrowers to rewards earned by Liquidity Providers and the Stability Pool.
       </>
     ),
     link: '/docs/fees',
@@ -78,6 +74,30 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
+const resourcesList = [
+  {
+    title: '📄 Mainnet Package IDs',
+    link: '/docs/mainnet-package',
+    description: 'Find all Sui package addresses used by the WeissFi protocol.',
+  },
+  {
+    title: '🎨 Media Kit',
+    link: '/docs/media-kit',
+    description: 'Download WeissFi logos, visuals, and official brand assets.',
+  },
+  {
+    title: '🗺️ Roadmap Feedback',
+    link: '/docs/roadmap-feedback',
+    description: 'Suggest features, vote on ideas, and help shape the future of WeissFi.',
+  },
+  {
+    title: '📊 Analytics Dashboard',
+    link: '/docs/analytics',
+    description: 'Track protocol usage, TVL, and performance across the platform.',
+  },
+];
+
+
 function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--6', styles.feature)}>
@@ -98,7 +118,7 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
-        <Heading as="h2" className="text--center margin-bottom--lg">
+        <Heading as="h1" className="text--center margin-bottom--lg">
           Explore WeissFi Documentation
         </Heading>
         <div className="row">
@@ -106,9 +126,19 @@ export default function HomepageFeatures(): ReactNode {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        {/* <RoadmapSection />
-        <FeedbackSection />
-        <ResourcesSection /> */}
+        <h1 className="text--center margin-top--lg margin-bottom--lg text--h1">Ressources</h1>
+        <div className="row">
+          {resourcesList.map((item, idx) => (
+            <div key={idx} className={clsx('col col--6', styles.feature)}>
+              <Link to={item.link} className={styles.card}>
+                <div className={clsx('text--center', styles.cardContent)}>
+                  <Heading as="h3">{item.title}</Heading>
+                  <p>{item.description}</p>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

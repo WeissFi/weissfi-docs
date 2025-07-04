@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
+import "./PointsCalculator.css";
 
 export default function PointsCalculator() {
   const [debt, setDebt] = useState(1000);
@@ -10,26 +11,41 @@ export default function PointsCalculator() {
   const flowx = (liquidity * Math.pow(30, 2) * 0.015).toFixed(2);
 
   return (
-    <div style={{border: '1px solid #ccc', padding: '1rem', marginTop: '1rem'}}>
-      <div>
-        <label>Debt ($)&nbsp;</label>
-        <input type="number" value={debt} onChange={e => setDebt(Number(e.target.value))} />
+    <div className="points-calculator">
+      <h2>Points Calculator</h2>
+
+      <div className="input-group">
+        <label>Vault Debt ($)</label>
+        <input
+          type="number"
+          value={debt}
+          onChange={(e) => setDebt(Number(e.target.value))}
+        />
       </div>
-      <div style={{marginTop: '0.5rem'}}>
-        <label>Staking ($)&nbsp;</label>
-        <input type="number" value={stake} onChange={e => setStake(Number(e.target.value))} />
+
+      <div className="input-group">
+        <label>Staked $WEIS</label>
+        <input
+          type="number"
+          value={stake}
+          onChange={(e) => setStake(Number(e.target.value))}
+        />
       </div>
-      <div style={{marginTop: '0.5rem'}}>
-        <label>FlowX Liquidity ($)&nbsp;</label>
+
+      <div className="input-group">
+        <label>FlowX Liquidity ($)</label>
         <input
           type="number"
           value={liquidity}
-          onChange={e => setLiquidity(Number(e.target.value))}
+          onChange={(e) => setLiquidity(Number(e.target.value))}
         />
       </div>
-      <p style={{marginTop: '0.5rem'}}>Monthly vault points: <strong>{vault}</strong></p>
-      <p>Monthly staking points: <strong>{staking}</strong></p>
-      <p>Monthly FlowX points: <strong>{flowx}</strong></p>
+
+      <div className="results">
+        <p>Vault points/month: <strong>{vault}</strong></p>
+        <p>Staking points/month: <strong>{staking}</strong></p>
+        <p>FlowX points/month: <strong>{flowx}</strong></p>
+      </div>
     </div>
   );
 }
