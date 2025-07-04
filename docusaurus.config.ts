@@ -115,7 +115,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Ressources',
+          title: 'Resources',
           items: [
             {
               label: 'FAQ',

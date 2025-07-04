@@ -126,7 +126,7 @@ export default function HomepageFeatures(): ReactNode {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <h1 className="text--center margin-top--lg margin-bottom--lg text--h1">Ressources</h1>
+        <h1 className="text--center margin-top--lg margin-bottom--lg text--h1">Resources</h1>
         <div className="row">
           {resourcesList.map((item, idx) => (
             <div key={idx} className={clsx('col col--6', styles.feature)}>
