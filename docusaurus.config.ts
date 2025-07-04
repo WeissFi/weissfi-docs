@@ -131,7 +131,7 @@ const config: Config = {
             },
             {
               label: 'Roadmap Feedback',
-              to: '/roadmap-feedback'
+              to: 'docs/roadmap-feedback'
             },
             {
               label: 'Analytics Dashboard',
