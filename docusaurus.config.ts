@@ -56,7 +56,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo-rounded.jpg',
+    image: 'img/og-weissfi.png',
     metadata: [
       { name: 'og:title', content: 'WeissFi Docs' },
       { name: 'og:description', content: 'Learn how Weiss Finance works — borrow, earn, redeem, and more.' },
