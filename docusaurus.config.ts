@@ -57,12 +57,20 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/logo-rounded.jpg',
+    metadata: [
+      { name: 'og:title', content: 'WeissFi Docs' },
+      { name: 'og:description', content: 'Learn how Weiss Finance works — borrow, earn, redeem, and more.' },
+      { name: 'og:image', content: 'https://docs.weiss.finance/img/og-weissfi.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: 'https://docs.weiss.finance/img/og-weissfi.png' },
+    ],
     navbar: {
       title: 'WeissFi Docs',
       logo: {
         alt: 'WeissFi Logo',
         src: 'img/logo-rounded.svg',
       },
+      
       items: [
         {
           type: 'docSidebar',
