@@ -22,12 +22,16 @@
 - Enter the amount of **SUI** you want to use as collateral.
 - Your collateral determines how much **DORI** you can borrow.
 
+<img src="/img/step1.png" alt="Enter collateral example" width="full" rounded="20px" />
+
 ### Step 2: Choose Loan Amount
 
 - Enter the amount of **DORI** you wish to borrow.
 - Monitor:
   - **LTV (Loan-to-Value Ratio)**
   - **Liquidation Price**
+
+<img src="/img/step2.png" alt="Enter Loan Amount example" width="full" rounded="20px" />
 
 > - **LTV** measures how much you borrow relative to your collateral. A higher LTV means higher risk.  
 > - **Liquidation Price** is the SUI price at which your loan will be liquidated if your collateral becomes insufficient.
@@ -36,6 +40,8 @@
 
 - Set the interest rate you’re willing to pay.
 - Lower rates reduce your borrowing cost but **increase redemption risk**.
+
+<img src="/img/step3.png" alt="Choose the Interest Rate example" width="full" rounded="20px" />
 
 > **Redemption Risk**: If the DORI peg falls below $1, users can redeem DORI for your collateral at a 5% discount.
 
@@ -49,6 +55,8 @@
 - Click **Confirm & Sign** to finalize your loan.
 - You receive **DORI** directly in your wallet and can use it immediately.
 
+<img src="/img/step4.png" alt="Review & Sign example" width="full" rounded="20px" />
+
 ---
 
 ## Glossary
@@ -57,10 +65,6 @@
 
 **Definition**: The ratio between the amount of **DORI borrowed** and the **deposited collateral** (in USD).
 
-$$
-LTV = \left(\frac{\text{Borrowed DORI (USD)}}{\text{Collateral Value (USD)}}\right) \times 100
-$$
-
 **Example**:
 
 - SUI Price: $3.9674  
@@ -68,9 +72,6 @@ $$
 - Collateral Value: 2,000 × 3.9674 = **$7,934.80**  
 - Borrowed Amount: 2,000 DORI
 
-$$
-LTV = \left(\frac{2,000}{7,934.80}\right) \times 100 = 25.20\%
-$$
 
 > 🔺 Higher LTV = Higher liquidation risk.
 
@@ -80,9 +81,6 @@ $$
 
 **Definition**: The SUI price at which your collateral is no longer sufficient to cover your borrowed DORI.
 
-$$
-\text{Liquidation Price} = \frac{\text{Borrowed Amount} \times 1.19}{\text{Collateral Deposited}}
-$$
 
 **Example**:
 
@@ -91,9 +89,6 @@ $$
 - Borrowed Amount: 2,000 DORI  
 - Max LTV = 80%
 
-$$
-\text{Liquidation Price} = \frac{2,000 \times 1.19}{2,000} = 1.19
-$$
 
 > If the price of SUI drops below **$1.19**, your position will be liquidated.
 
@@ -111,7 +106,7 @@ If DORI loses its $1 peg, holders can **redeem DORI for SUI** via the redemption
 > - ⚠️ Lower rates = higher chance of redemption  
 > - ✅ Higher rates = safer from redemption
 
-[→ learn more about redemption mode](/docs/redemption)
+[→ Learn more about redemption mode](/docs/redemption)
 
 ---
 
