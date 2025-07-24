@@ -4,7 +4,9 @@
 
 **Redemptions** are a key mechanism that helps maintain **DORI’s peg to $1** without relying on centralized assets or third parties.
 
-A **redemption** allows a user to **swap DORI for SUI at face value** (1 DORI = $1 worth of SUI). When the price of DORI falls below $1, arbitrageurs can redeem DORI for SUI, reducing the DORI supply and helping restore its peg.
+A **redemption** allows a user to **swap DORI for SUI at face value** 
+
+(1 DORI = $1 worth of SUI). When the price of DORI falls below $1, arbitrageurs can redeem DORI for SUI, reducing the DORI supply and helping restore its peg.
 
 ### How It Works:
 
@@ -53,7 +55,7 @@ When a redemption occurs:
 The risk of being redeemed depends on:
 
 - **Your Interest Rate** – Borrowers with the **lowest rates** are redeemed first.
-- **The Price of DORI** – If DORI is **above $1**, redemptions are **not profitable**.
+- **The Price of DORI** – If DORI is **equal or above $1**, redemptions are **not profitable**.
 
 ### To reduce your redemption risk:
 

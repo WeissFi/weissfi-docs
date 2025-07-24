@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'WeissFi Docs',
+  title: 'Weiss Finance',
   tagline: 'Borrow and earn with full control — powered by Sui.',
   favicon: 'img/favicon.ico',
 
@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'WeissFi', // Usually your GitHub org/user name.
-  projectName: 'WeissFi', // Usually your repo name.
+  organizationName: 'Weiss Finance', // Usually your GitHub org/user name.
+  projectName: 'Weiss Finance', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -58,16 +58,16 @@ const config: Config = {
   themeConfig: {
     image: 'img/og-weissfi.png',
     metadata: [
-      { name: 'og:title', content: 'WeissFi Docs' },
+      { name: 'og:title', content: 'Weiss Finance Documentation' },
       { name: 'og:description', content: 'Learn how Weiss Finance works — borrow, earn, redeem, and more.' },
       { name: 'og:image', content: 'https://docs.weiss.finance/img/og-weissfi.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:image', content: 'https://docs.weiss.finance/img/og-weissfi.png' },
     ],
     navbar: {
-      title: 'WeissFi Docs',
+      title: 'Weiss Finance',
       logo: {
-        alt: 'WeissFi Logo',
+        alt: 'Weiss Finance',
         src: 'img/logo-rounded.svg',
       },
       
@@ -178,7 +178,7 @@ const config: Config = {
           ],
         }
       ],
-      copyright: `<img src="/img/logo-rounded.svg" alt="WeissFi Logo" style="height:40px;margin-top:10px;" /><br/>© ${new Date().getFullYear()} WeissFi. All rights reserved.`,
+      copyright: `<img src="/img/logo-rounded.svg" alt="Weiss Finance Logo" style="height:40px;margin-top:10px;" /><br/>© ${new Date().getFullYear()} WeissFi. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

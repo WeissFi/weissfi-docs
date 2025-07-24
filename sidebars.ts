@@ -4,7 +4,7 @@ const sidebars: SidebarsConfig = {
   docs: [
     {
       type: 'category',
-      label: 'WeissFi Protocol',
+      label: 'Weiss Finance',
       collapsed: false,
       items: [
         'introduction',
@@ -12,7 +12,6 @@ const sidebars: SidebarsConfig = {
         'earn',
         'fees',
         'redemption',
-        'oracles',
         'points-system',
         // 'vault-drop-campaign',
       ],
@@ -22,11 +21,12 @@ const sidebars: SidebarsConfig = {
       label: 'Resources',
       collapsed: false,
       items: [
-        'faq',
+        'oracles',
         'mainnet-package',
         'media-kit',
         'roadmap-feedback',
         'analytics',
+        'faq',
       ],
     },
   ],
