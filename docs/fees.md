@@ -9,15 +9,14 @@
 ### 📌 Borrowing Fee
 
 - **0.75% fee** on the borrowed amount.
-- Applied **each time** the borrower draws additional DORI from their Trove.
+- Applied when **opening a vault** and when **updating the interest rate**.
 - The fee is **added to the debt**, not deducted from the borrowed amount.
 - **100% → Allocated to the WeissFi team** for protocol sustainability.
 
 ### 💸 Upfront Interest Payment
 
-- When opening a loan, borrowers must pay **7 days of interest upfront**.
-- This interest is **added to the debt** at loan creation.
-- Each time the borrower modifies their interest rate, another **7 days of interest** is added.
+- When opening a vault or updating interest rates, borrowers must pay **15 days of average protocol interest upfront**.
+- This interest is **added to the debt** at vault creation or rate modification.
 - Prevents abuse by ensuring commitment when adjusting rates.
 - **100% → Distributed to Earners** in the Stability Pool.
 
@@ -34,32 +33,32 @@
 ### 🔁 Interest Rate Modifications
 
 - Borrowers can **modify** their interest rate at any time.
-- Each modification adds **7 days of interest (at the new rate)** to the debt.
+- Each interest rate modification adds **15 days of interest (at the new rate)** to the debt.
 - This mechanism prevents abuse and ensures fair compensation to liquidity providers.
 
 **Interest Fee Distribution:**
 
-- **75% → Stability Pool (Earners)**
-- **25% → Liquidity Pool (Liquidity Providers)**
+- **80% → Stability Pool (Earners)**
+- **20% → Liquidity Providers/NFT Stakers (Farming)**
 
 ---
 
 ## Liquidation Fees
 
-- If a borrower's **Loan-to-Value (LTV)** exceeds **90%**, their collateral is **automatically liquidated**.
-- A **6% liquidation penalty** is applied to the borrower's collateral.
+- If a borrower's **Loan-to-Value (LTV)** exceeds **83.33%** (120% MCR), their collateral is **automatically liquidated**.
+- A **10% liquidation penalty** is applied to the borrower's collateral.
 - The borrower keeps any remaining collateral after liquidation.
 
 **Liquidation Fee Distribution:**
 
-- **85% → Stability Pool (Earners)**
-- **15% → WeissFi Team**
+- **100% → Stability Pool (Earners)**
+- **0% → WeissFi Team** (WeissFi team currently takes no fees on liquidation)
 
 ---
 
 ## Redemption Fees
 
-- Redemptions occur when **DORI trades below $1**.
+- Redemptions occur when **DORI depegs** and creates arbitrage opportunities.
 - Fees are based on a dynamic variable called **`baseRate`**.
 
 ### Redemption Fee Formula:
@@ -76,13 +75,13 @@
 
 | **Fee Type**               | **Details**                                                                 |
 |----------------------------|------------------------------------------------------------------------------|
-| **Borrowing Fee**          | 0.75% on each DORI draw, added to debt.                                     |
-| **Upfront Interest**       | 7 days of interest paid upfront at loan creation or interest rate change.   |
+| **Borrowing Fee**          | 0.75% on vault creation and interest rate updates, added to debt.           |
+| **Upfront Interest**       | 15 days of average protocol interest paid upfront at vault creation or interest rate change. |
 | **Ongoing Interest**       | Set by the borrower, accrues over time.                                     |
-| **Interest Modifications** | Each modification adds 7 days of interest to debt.                          |
-| **Liquidation Penalty**    | 6% of collateral taken upon liquidation.                                    |
-| **Liquidation Fee Split**  | 85% to Stability Pool, 15% to WeissFi team.                                 |
-| **Redemption Fee**         | Minimum 0.5% + baseRate, adjusts dynamically based on demand.               |
+| **Interest Modifications** | Each modification adds 15 days of interest + 0.75% fee to debt.             |
+| **Liquidation Penalty**    | 10% of collateral taken upon liquidation.                                   |
+| **Liquidation Fee Split**  | 100% to Stability Pool, 0% to WeissFi team.                                 |
+| **Redemption Fee**         | 0.5% base + dynamic rate that halves every 6 hours to protect against large redemptions. |
 
 ---
 

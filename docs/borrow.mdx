@@ -43,7 +43,7 @@
 
 <img src="/img/step3.png" alt="Choose the Interest Rate example" width="full" rounded="20px" />
 
-> **Redemption Risk**: If the DORI peg falls below $1, users can redeem DORI for your collateral at a 5% discount.
+> **Redemption Risk**: If DORI depegs and creates arbitrage opportunities, users can redeem DORI for your collateral. Redemption fees start at 0.5% + dynamic rate that halves every 6 hours to protect against large redemptions.
 
 ### Step 4: Review & Sign
 
@@ -51,7 +51,7 @@
   - ✅ Collateral
   - ✅ Loan amount
   - ✅ Interest rate
-  - ✅ Total Debt = Loan Value + (0.75% Borrowing Fee) + (7-Day Interest Rate)
+  - ✅ Total Debt = Loan Value + (0.75% Borrowing Fee) + (15-Day Average Protocol Interest)
 - Click **Confirm & Sign** to finalize your loan.
 - You receive **DORI** directly in your wallet and can use it immediately.
 
@@ -107,6 +107,37 @@ If DORI loses its $1 peg, holders can **redeem DORI for SUI** via the redemption
 > - ✅ Higher rates = safer from redemption
 
 [→ Learn more about redemption mode](/docs/redemption)
+
+---
+
+## Why Choose Your Own Interest Rate?
+
+**WeissFi's flexible interest rate system gives you unprecedented control over your borrowing costs and risk management.**
+
+### Key Advantages:
+
+**🎯 Competitive Rates**
+- Start as low as **0.5%** interest (compared to fixed 8%+ on other protocols)
+- Set rates up to **25%** based on your risk tolerance
+- **You decide** what you're willing to pay
+
+**⚖️ Strategic Risk Management**
+- **Low rates (0.5%-2%)**: Minimize borrowing costs but accept redemption risk
+- **Higher rates (5%+)**: Protect against redemption by contributing more to the protocol
+
+### Smart Rate Selection Strategy:
+
+**When to use LOW rates (0.5%-2%)**:
+- Your collateral has **appreciated significantly** since borrowing
+- Even if redeemed, you'd still profit from the higher collateral price
+- Example: Borrowed at $1 SUI, now worth $3 - redemption would still be profitable
+
+**When to use HIGHER rates (5%+)**:
+- Your collateral has **depreciated** since borrowing  
+- You want to **protect your position** from redemption
+- Market conditions are volatile and you prefer stability
+
+> **Remember**: The protocol redeems from lowest interest rate borrowers first, so higher rates = better protection.
 
 ---
 

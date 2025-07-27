@@ -7,7 +7,7 @@
 ### With Earn, you can:
 
 - **Earn Interest from Borrowers**  
-  20% of borrower-paid interest is distributed to depositors in DORI, ensuring market-driven returns.
+  80% of borrower-paid interest is distributed to depositors in DORI, ensuring market-driven returns.
 
 - **Real Yield – No Token Emissions**  
   Unlike other protocols that print tokens to reward depositors, WeissFi ensures a sustainable yield sourced directly from protocol fees and liquidations.
@@ -29,7 +29,7 @@ Deposit DORI into the Stability Pool to start earning rewards.
 ### Step 2: Accumulate Rewards
 
 - Earn DORI from borrower-paid interest payments.
-- Receive **liquidated SUI at a discount (~2.5%)** when liquidations occur.
+- When liquidations occur, your DORI is used to repay the liquidated vault's debt and you receive their **collateral plus a 10% liquidation bonus**.
 
 ### Step 3: Withdraw or Compound
 
@@ -45,7 +45,7 @@ A pool where users deposit **DORI** to earn rewards from borrower interest and l
 
 ### Liquidation Gains
 
-When a borrower is liquidated, depositors receive their collateral (**SUI**) at a discount, increasing overall returns.
+When a borrower is liquidated, your deposited **DORI** is used to offset the vault's debt, and in exchange you receive the borrower's **collateral** plus a **10% liquidation bonus**, increasing overall returns.
 
 ### Real Yield
 
@@ -57,6 +57,6 @@ A yield model where rewards come from **actual protocol revenue**, instead of ar
 
 - 💸 **Passive Income** – Earn sustainable yield from borrower interest payments and liquidations.  
 - 🧠 **Strategic Exposure** – Choose your preferred collateral pool based on your risk appetite.  
-- ⚡ **Capital Efficiency** – Accumulate SUI at a discount while keeping full control of your DORI.
+- ⚡ **Capital Efficiency** – Accumulate collateral at a 10% discount while keeping full control of your DORI.
 
 > **Start earning today** and take advantage of decentralized finance on Sui.

@@ -16,10 +16,10 @@ Use these hex codes whenever referencing the WeissFi brand.
 
 Official logos are provided in SVG format for best quality:
 
-- [Logo without background](https://www.weiss.finance/logo-no-bg.svg)
-- [Logo with background](https://www.weiss.finance/logo-rounded.svg)
-- [Dori logo](https://app.weiss.finance/logo-dori-bg-white.svg)
-- [Default Dori logo](https://app.weiss.finance/logo-rounded.svg)
+- **Logo without background:** https://www.weiss.finance/logo-no-bg.svg
+- **Logo with background:** https://www.weiss.finance/logo-rounded.svg
+- **Dori logo:** https://app.weiss.finance/logo-dori-bg-white.svg
+- **Default Dori logo:** https://app.weiss.finance/logo-rounded.svg
 
 Do not alter the colors or proportions of these images.
 

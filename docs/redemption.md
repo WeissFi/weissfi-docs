@@ -4,14 +4,14 @@
 
 **Redemptions** are a key mechanism that helps maintain **DORI’s peg to $1** without relying on centralized assets or third parties.
 
-A **redemption** allows a user to **swap DORI for SUI at face value** 
+A **redemption** allows a user to **swap DORI for collateral at face value** 
 
-(1 DORI = $1 worth of SUI). When the price of DORI falls below $1, arbitrageurs can redeem DORI for SUI, reducing the DORI supply and helping restore its peg.
+(1 DORI = $1 worth of collateral). When the price of DORI falls below $1, arbitrageurs can redeem DORI for collateral, reducing the DORI supply and helping restore its peg.
 
 ### How It Works:
 
 1. The redeemer sends **DORI** to the protocol.  
-2. In return, they receive **SUI**, minus a small redemption fee.  
+2. In return, they receive **collateral**, minus a small redemption fee.  
 3. Redemptions are processed from **borrowers with the lowest collateral ratio**.  
 
 > ✅ This ensures **market-driven stability** and maintains the DORI peg.
@@ -22,7 +22,7 @@ A **redemption** allows a user to **swap DORI for SUI at face value**
 
 When a redemption occurs:
 
-- A portion of the borrower's **SUI collateral** is used.
+- A portion of the borrower's **collateral** is used.
 - Their **debt is reduced** proportionally.
 - Borrowers **do not lose USD value** — the system adjusts both debt and collateral.
 
@@ -30,9 +30,9 @@ When a redemption occurs:
 
 |                | Before Redemption      | After Redemption       |
 |----------------|------------------------|-------------------------|
-| SUI Collateral | 10,000 SUI             | 9,500 SUI               |
+| Collateral     | 10,000 units           | 9,500 units             |
 | DORI Debt      | 5,000 DORI             | 4,750 DORI              |
-| Fee            | 2.5% (SUI stays with borrower) | ✅ |
+| Fee            | 0.5% + dynamic (paid by redeemer) | ✅ |
 
 > 💡 Borrowers do not lose funds in USD terms — redemptions simply **rebalance debt and collateral**.
 
@@ -44,7 +44,7 @@ When a redemption occurs:
 - The fee is based on the **amount redeemed** and **recent redemption volume**.
 - **Starts at 0.5%** and **decays over time** if redemptions slow down.
 
-> ✅ **Unlike other systems**, the **borrower keeps the fee**, making redemptions more fair.
+> ✅ **Unlike other systems**, the **protocol collects the fee from the redeemer**, making redemptions more fair for borrowers.
 
 > 💡 If DORI is trading **at or above $1**, redemptions are **unlikely** to occur.
 

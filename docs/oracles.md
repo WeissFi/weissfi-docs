@@ -1,6 +1,6 @@
 # Oracles
 
-Weiss Finance integrates multiple on-chain price oracles to fetch real-time price data used across the protocol. We utilize **Pyth**, **Switchboard**, and **Stork** to ensure reliable market prices for supported assets.
+Weiss Finance integrates multiple on-chain price oracles to fetch real-time price data used across the protocol. We utilize **Pyth** and **Switchboard** to ensure reliable market prices for supported assets.
 
 Oracle data is queried during key protocol operations, including:
 

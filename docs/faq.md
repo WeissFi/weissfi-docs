@@ -19,7 +19,7 @@ WeissFi introduces **user-controlled interest rates**, **efficient liquidations*
 
 ### How do I borrow with WeissFi?
 
-1. **Deposit SUI** as collateral.  
+1. **Deposit collateral** (currently SUI).  
 2. **Choose how much DORI** you want to borrow (keep an eye on your **Loan-to-Value ratio**).  
 3. **Set your preferred interest rate** — higher rates lower your **risk of redemption**.  
 4. **Confirm & sign** the transaction to receive DORI in your wallet.  
@@ -40,13 +40,13 @@ WeissFi introduces **user-controlled interest rates**, **efficient liquidations*
 
 The **Liquidation Price** is the price at which your **collateral is no longer sufficient** to cover your loan, triggering liquidation.
 
-- If the price of **SUI falls below this level**, your position may be liquidated.
+- If the price of **your collateral falls below this level**, your position may be liquidated.
 
 ---
 
 ### What happens if I'm liquidated?
 
-- If your **LTV exceeds 91%**, your collateral is **automatically liquidated**.  
+- If your **LTV exceeds 83.33%** (120% MCR), your collateral is **automatically liquidated**.  
 - Your **debt is repaid**.  
 - Your **collateral is transferred** (at a discount) to **Stability Pool depositors**.
 
@@ -67,8 +67,8 @@ Yes — just go to the **dashboard** and click **Repay Loan**.
 
 By depositing **DORI into Stability Pools**, you earn:
 
-- **Interest Payments** – Borrowers pay interest, and **50% of that is distributed to depositors**.
-- **Liquidation Gains** – When a borrower is liquidated, depositors receive their **SUI collateral at a ~2.5% discount**.
+- **Interest Payments** – Borrowers pay interest, and **80% of that is distributed to depositors** while **20% goes to Liquidity Providers/NFT Stakers**.
+- **Liquidation Gains** – When a borrower is liquidated, depositors receive their **collateral plus a 10% liquidation bonus**.
 
 ---
 
@@ -86,7 +86,7 @@ You can withdraw your DORI at any time — **no lockups, no delays**.
 - **Borrower interest payments**
 - **Liquidation events**
 
-Each Stability Pool is **tied to a specific collateral** (e.g., **SUI**), allowing you to choose your **preferred risk exposure**.
+Each Stability Pool is **tied to a specific collateral type**, allowing you to choose your **preferred risk exposure**.
 
 ---
 
@@ -94,9 +94,9 @@ Each Stability Pool is **tied to a specific collateral** (e.g., **SUI**), allowi
 
 ### What are redemptions?
 
-**Redemptions** ensure that **DORI maintains its $1 peg** by allowing users to **swap DORI for SUI at face value**.
+**Redemptions** ensure that **DORI maintains its $1 peg** by allowing users to **swap DORI for collateral at face value**.
 
-- If DORI falls below $1, **arbitrageurs redeem DORI for SUI**, reducing supply and helping restore the peg.
+- If DORI falls below $1, **arbitrageurs redeem DORI for collateral**, reducing supply and helping restore the peg.
 - Redemptions **start with borrowers paying the lowest interest rates**.
 
 ---
@@ -105,7 +105,7 @@ Each Stability Pool is **tied to a specific collateral** (e.g., **SUI**), allowi
 
 - Your **debt is reduced**, and an **equivalent amount of collateral** is used to repay the redeemer.
 - You **do not lose USD value** — your **debt and collateral adjust proportionally**.
-- You **keep a small redemption fee** (e.g. ~0.5%) from the redeemer.
+- The **protocol collects a redemption fee** (0.5% + dynamic rate) from the redeemer.
 
 ---
 
@@ -120,9 +120,9 @@ Each Stability Pool is **tied to a specific collateral** (e.g., **SUI**), allowi
 
 ### Is there a fee during redemptions?
 
-Yes — a **small fee (~0.5%)** is applied when someone redeems DORI for SUI.
+Yes — a **small fee (0.5% + dynamic rate)** is applied when someone redeems DORI for collateral.
 
-- The fee is **not paid by you**, but is **retained in your Trove** (borrower position).
+- The fee is **paid by the redeemer**, not by you as the borrower.
 - This makes redemptions **fairer** than in other systems.
 
 ---
