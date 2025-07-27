@@ -105,7 +105,7 @@ Each Stability Pool is **tied to a specific collateral type**, allowing you to c
 
 - Your **debt is reduced**, and an **equivalent amount of collateral** is used to repay the redeemer.
 - You **do not lose USD value** — your **debt and collateral adjust proportionally**.
-- The **protocol collects a redemption fee** (0.5% + dynamic rate) from the redeemer.
+- The **protocol collects a redemption fee** (0.5% + dynamic rate) from your collateral, while the redeemer receives the remaining amount.
 
 ---
 
@@ -120,9 +120,9 @@ Each Stability Pool is **tied to a specific collateral type**, allowing you to c
 
 ### Is there a fee during redemptions?
 
-Yes — a **small fee (0.5% + dynamic rate)** is applied when someone redeems DORI for collateral.
+Yes — a **small fee (0.5% + dynamic rate)** is deducted from the borrower's collateral when someone redeems DORI.
 
-- The fee is **paid by the redeemer**, not by you as the borrower.
+- The fee is **effectively paid by you as the borrower** through a deduction from your collateral.
 - This makes redemptions **fairer** than in other systems.
 
 ---

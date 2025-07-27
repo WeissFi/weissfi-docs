@@ -11,7 +11,7 @@ A **redemption** allows a user to **swap DORI for collateral at face value**
 ### How It Works:
 
 1. The redeemer sends **DORI** to the protocol.  
-2. In return, they receive **collateral**, minus a small redemption fee.  
+2. In return, they receive **collateral** (the redemption fee is deducted from the borrower's collateral).  
 3. Redemptions are processed from **borrowers with the lowest collateral ratio**.  
 
 > ✅ This ensures **market-driven stability** and maintains the DORI peg.
@@ -32,7 +32,7 @@ When a redemption occurs:
 |----------------|------------------------|-------------------------|
 | Collateral     | 10,000 units           | 9,500 units             |
 | DORI Debt      | 5,000 DORI             | 4,750 DORI              |
-| Fee            | 0.5% + dynamic (paid by redeemer) | ✅ |
+| Fee            | 0.5% + dynamic (deducted from borrower's collateral) | ✅ |
 
 > 💡 Borrowers do not lose funds in USD terms — redemptions simply **rebalance debt and collateral**.
 
@@ -44,7 +44,14 @@ When a redemption occurs:
 - The fee is based on the **amount redeemed** and **recent redemption volume**.
 - **Starts at 0.5%** and **decays over time** if redemptions slow down.
 
-> ✅ **Unlike other systems**, the **protocol collects the fee from the redeemer**, making redemptions more fair for borrowers.
+### How the Fee Works:
+- When someone redeems $1000 DORI with a 0.5% fee:
+  - Protocol deducts 0.5% ($5) from the borrower's collateral
+  - Redeemer receives $995 worth of collateral  
+  - Protocol keeps the $5 fee
+  - **Borrower effectively pays the fee** through reduced collateral
+
+> ✅ The **protocol collects a small fee from the borrower's collateral**, while the redeemer receives slightly less than face value.
 
 > 💡 If DORI is trading **at or above $1**, redemptions are **unlikely** to occur.
 
