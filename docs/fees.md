@@ -18,7 +18,7 @@
 - When opening a vault or updating interest rates, borrowers must pay **15 days of average protocol interest upfront**.
 - This interest is **added to the debt** at vault creation or rate modification.
 - Prevents abuse by ensuring commitment when adjusting rates.
-- **100% → Distributed to Earners** in the Stability Pool.
+- **80% → Distributed to Earners** in the Stability Pool, **20% → Liquidity Providers/NFT Stakers**.
 
 ---
 

@@ -18,7 +18,7 @@ Inspired by **Liquity V2**, WeissFi introduces:
   Define the interest rate you're willing to pay and manage your borrowing strategy on your terms.
 
 - **Instant Liquidity & Optimized Collateralization**  
-  Deposit SUI as collateral and borrow DORI stablecoins instantly while maintaining exposure to your assets.
+  Deposit collateral (currently SUI) and borrow DORI stablecoins instantly while maintaining exposure to your assets.
 
 - **Automated Liquidations & Stability Pools**  
   Protect your collateral with Stability Pools, ensuring a secure and sustainable liquidation process.

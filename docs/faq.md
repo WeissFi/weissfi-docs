@@ -4,7 +4,7 @@
 
 ### What is WeissFi?
 
-WeissFi is a decentralized finance (DeFi) protocol built on the **Sui blockchain** that allows users to **borrow DORI** against their SUI holdings while setting their **own interest rates**.  
+WeissFi is a decentralized finance (DeFi) protocol built on the **Sui blockchain** that allows users to **borrow DORI** against their collateral (currently SUI) while setting their **own interest rates**.  
 It also enables users to **earn yield** through Stability Pools, all while benefiting from **transparent and efficient liquidations**.
 
 ---

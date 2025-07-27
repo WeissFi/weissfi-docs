@@ -2,11 +2,11 @@
 
 ## How Does Borrowing Work?
 
-**WeissFi** enables users to borrow the **DORI** stablecoin against their **SUI** holdings with **user-defined interest rates**. Unlike traditional DeFi lending platforms, WeissFi gives borrowers **full control** over the interest they pay, making it a flexible and capital-efficient borrowing solution.
+**WeissFi** enables users to borrow the **DORI** stablecoin against their **collateral** (currently SUI) with **user-defined interest rates**. Unlike traditional DeFi lending platforms, WeissFi gives borrowers **full control** over the interest they pay, making it a flexible and capital-efficient borrowing solution.
 
 ### Unlike traditional lending platforms, WeissFi lets you:
 
-- **Instant Liquidity** – Borrow DORI immediately against your SUI holdings while maintaining exposure to the asset.
+- **Instant Liquidity** – Borrow DORI immediately against your collateral while maintaining exposure to the asset.
 - **Choose your interest rate** – You decide the interest rate for your loan, allowing for optimal financial planning.
 - **Efficient Liquidations** – WeissFi utilizes Stability Pools to absorb liquidated debt, protecting borrowers from sudden liquidations.
 - **No Fixed Repayment Schedule** – Repay your loan at any time, as long as you maintain a healthy Loan-To-Value (LTV) ratio.
@@ -19,7 +19,7 @@
 
 ### Step 1: Enter the Collateral Amount
 
-- Enter the amount of **SUI** you want to use as collateral.
+- Enter the amount of **collateral** you want to use (currently SUI).
 - Your collateral determines how much **DORI** you can borrow.
 
 <img src="/img/step1.png" alt="Enter collateral example" width="full" rounded="20px" />
@@ -34,7 +34,7 @@
 <img src="/img/step2.png" alt="Enter Loan Amount example" width="full" rounded="20px" />
 
 > - **LTV** measures how much you borrow relative to your collateral. A higher LTV means higher risk.  
-> - **Liquidation Price** is the SUI price at which your loan will be liquidated if your collateral becomes insufficient.
+> - **Liquidation Price** is the collateral price at which your loan will be liquidated if your collateral becomes insufficient.
 
 ### Step 3: Select Your Interest Rate
 
@@ -87,7 +87,7 @@
 - SUI Price: $3.9674  
 - Collateral: 2,000 SUI  
 - Borrowed Amount: 2,000 DORI  
-- Max LTV = 80%
+- Max LTV = 83.33%
 
 
 > If the price of SUI drops below **$1.19**, your position will be liquidated.
