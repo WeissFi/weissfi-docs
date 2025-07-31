@@ -32,4 +32,10 @@ Below are the key package and shared object addresses for WeissFi on Sui mainnet
 |------|---------|
 | SUI | `0x2::sui::SUI` |
 | DORI | `0xc436a8ccc36e649e0fd8c7cec88ca89747b69ba5bdefb15be2f93ae1ae632800::dori::DORI` |
+| WEIS | `0xeb14299cfb01db1b755da4cec699700e56de36d5ec5d7260ca616b69bc8659cf::weis::WEIS` |
 | USDC | `0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC` |
+
+## Deepbook 
+| Market | Pool Address |
+|------|---------|
+| WEIS/USDC | `0x653e7658fe5bea8659f2b5aaceda71fd04060b99ea8859a58f5cd9d7ec6a3fae` |
