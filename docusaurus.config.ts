@@ -55,6 +55,10 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    './src/plugins/security-headers.js',
+  ],
+
   themeConfig: {
     image: 'img/og-weissfi.png',
     metadata: [
