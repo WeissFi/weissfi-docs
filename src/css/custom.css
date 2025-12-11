@@ -1,26 +1,174 @@
 @import "katex/dist/katex.min.css";
 
 :root {
-  --ifm-color-primary: #212121; /* rouge vif WeissFi */
-  --ifm-color-primary-dark: #ff0000;
-  --ifm-color-primary-darker: #aa0000;
-  --ifm-color-primary-darkest: #880000;
-  --ifm-color-primary-light: #ff3333;
-  --ifm-color-primary-lighter: #ff6666;
-  --ifm-color-primary-lightest: #ff9999;
+  /* WeissFi Colors */
+  --custom-accent: oklch(0.63 0.2577 29.23);
+  --custom-secondary: oklch(0.57 0.1946 257.86);
+  --custom-neutral: oklch(0.96 0 0);
 
-  --ifm-code-font-size: 95%;
+  /* Primary */
+  --ifm-color-primary: #ff0000;
+  --ifm-color-primary-dark: #e60000;
+  --ifm-color-primary-darker: #cc0000;
+  --ifm-color-primary-darkest: #b30000;
+  --ifm-color-primary-light: #ff1a1a;
+  --ifm-color-primary-lighter: #ff3333;
+  --ifm-color-primary-lightest: #ff4d4d;
+
+  /* Typography */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', sans-serif;
+  --ifm-code-font-size: 90%;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-font-weight: 600;
+
+  /* Background */
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: lab(4.34002% .141293 -.518128);
+  --ifm-footer-background-color: lab(4.34002% .141293 -.518128);
+
+  /* Border */
+  --ifm-global-radius: 12px;
+  --ifm-color-border: #e5e7eb;
+
+  /* Code */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+
+  /* Navbar */
+  --ifm-navbar-height: 70px;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #fff;
-  --ifm-color-primary-dark: #ff0000;
-  --ifm-color-primary-darker: #aa0000;
-  --ifm-color-primary-darkest: #880000;
-  --ifm-color-primary-light: #ff3333;
-  --ifm-color-primary-lighter: #ff6666;
-  --ifm-color-primary-lightest: #ff9999;
+  /* Dark Mode */
+  --custom-accent: oklch(0.63 0.2577 29.23);
+  --custom-secondary: oklch(0.57 0.1946 257.86);
+  --custom-neutral: oklch(0.25 0 0);
 
+  --ifm-color-primary: #ff0000;
+  --ifm-color-primary-dark: #e60000;
+  --ifm-color-primary-darker: #cc0000;
+  --ifm-color-primary-darkest: #b30000;
+  --ifm-color-primary-light: #ff1a1a;
+  --ifm-color-primary-lighter: #ff3333;
+  --ifm-color-primary-lightest: #ff4d4d;
+
+  --ifm-background-color: oklch(0.1689 0.0021 286.18);
+  --ifm-navbar-background-color: lab(4.34002% .141293 -.518128);
+  --ifm-footer-background-color: lab(4.34002% .141293 -.518128);
+  --ifm-font-color-base: oklch(0.985 0 0);
+
+  --ifm-color-border: rgba(255, 255, 255, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Tables */
+table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table thead tr {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme='dark'] table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Feature Cards */
+.feature-card {
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--ifm-color-border);
+  transition: border-color 0.2s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--ifm-font-color-base);
+}
+
+/* Code */
+code {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9em;
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Links */
+a {
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Headers */
+article h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-border);
+  font-weight: 600;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #212121;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar__link:hover {
+  color: white;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container {
+  border-right: 1px solid #212121;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--ifm-color-border);
+}
+
+.footer__link-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__link-item:hover {
+  color: white;
 }
