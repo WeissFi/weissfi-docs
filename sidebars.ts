@@ -7,7 +7,11 @@ const sidebars: SidebarsConfig = {
       label: 'Weiss Finance',
       collapsed: false,
       items: [
-        'introduction',
+        {
+          type: 'doc',
+          id: 'introduction',
+          label: 'Introduction',
+        },
         'borrow',
         'earn',
         'sdori',

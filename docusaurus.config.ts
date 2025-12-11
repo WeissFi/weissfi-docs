@@ -94,31 +94,31 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/introduction',
+              to: '/',
             },
             {
               label: 'Borrow',
-              to: '/docs/borrow',
+              to: '/borrow',
             },
             {
               label: 'Earn',
-              to: '/docs/earn',
+              to: '/earn',
             },
             {
               label: 'Fees',
-              to: '/docs/fees',
+              to: '/fees',
             },
             {
               label: 'Redemption',
-              to: '/docs/redemption',
+              to: '/redemption',
             },
             {
               label: 'Points System',
-              to: '/docs/points-system',
+              to: '/points-system',
             },
             // {
             //   label: 'Vault Drop Campaign',
-            //   to: '/docs/vault-drop-campaign',
+            //   to: '/vault-drop-campaign',
             // },
           ],
         },
@@ -127,23 +127,23 @@ const config: Config = {
           items: [
             {
               label: 'FAQ',
-              to: '/docs/faq',
+              to: '/faq',
             },
             {
               label: 'Mainnet Package IDs',
-              to: '/docs/mainnet-package',
+              to: '/mainnet-package',
             },
             {
               label: 'Media Kit',
-              to: '/docs/media-kit',
+              to: '/media-kit',
             },
             {
               label: 'Roadmap Feedback',
-              to: 'docs/roadmap-feedback'
+              to: '/roadmap-feedback'
             },
             {
               label: 'Analytics Dashboard',
-              to: '/docs/analytics'
+              to: '/analytics'
             }
           ]
         },
