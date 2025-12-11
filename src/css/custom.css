@@ -70,8 +70,8 @@ table {
 }
 
 table thead tr {
-  background: var(--ifm-color-primary);
-  color: white;
+  background: transparent;
+  border-bottom: 1px solid var(--ifm-color-border);
 }
 
 table tbody tr:hover {
