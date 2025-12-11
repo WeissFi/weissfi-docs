@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
         'introduction',
         'borrow',
         'earn',
+        'sdori',
         'fees',
         'redemption',
         'points-system',

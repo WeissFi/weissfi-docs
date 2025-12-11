@@ -41,6 +41,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/', // Docs at the root
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           remarkPlugins: [require('remark-math')],
@@ -48,6 +49,7 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        blog: false, // Disable blog
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -77,14 +79,8 @@ const config: Config = {
       
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docs',
-          position: 'left',
-          label: 'Docs',
-        },
-        {
           href: 'https://weiss.finance',
-          label: 'Website',
+          label: 'weiss.finance',
           position: 'right',
         },
       ],
