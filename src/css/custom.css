@@ -1,10 +1,13 @@
 @import "katex/dist/katex.min.css";
 
+/* --------------------------------------------------
+   GLOBAL — DARK THEME ONLY (WeissFi)
+-------------------------------------------------- */
 :root {
   /* WeissFi Colors */
   --custom-accent: oklch(0.63 0.2577 29.23);
   --custom-secondary: oklch(0.57 0.1946 257.86);
-  --custom-neutral: oklch(0.96 0 0);
+  --custom-neutral: oklch(0.25 0 0);
 
   /* Primary */
   --ifm-color-primary: #ff0000;
@@ -17,53 +20,31 @@
 
   /* Typography */
   --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', sans-serif;
-  --ifm-code-font-size: 90%;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.7;
   --ifm-heading-font-weight: 600;
+  --ifm-font-color-base: oklch(0.985 0 0);
 
   /* Background */
-  --ifm-background-color: #ffffff;
-  --ifm-navbar-background-color: lab(4.34002% .141293 -.518128);
-  --ifm-footer-background-color: lab(4.34002% .141293 -.518128);
-
-  /* Border */
-  --ifm-global-radius: 12px;
-  --ifm-color-border: #e5e7eb;
-
-  /* Code */
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
-
-  /* Navbar */
-  --ifm-navbar-height: 70px;
-  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-[data-theme='dark'] {
-  /* Dark Mode */
-  --custom-accent: oklch(0.63 0.2577 29.23);
-  --custom-secondary: oklch(0.57 0.1946 257.86);
-  --custom-neutral: oklch(0.25 0 0);
-
-  --ifm-color-primary: #ff0000;
-  --ifm-color-primary-dark: #e60000;
-  --ifm-color-primary-darker: #cc0000;
-  --ifm-color-primary-darkest: #b30000;
-  --ifm-color-primary-light: #ff1a1a;
-  --ifm-color-primary-lighter: #ff3333;
-  --ifm-color-primary-lightest: #ff4d4d;
-
   --ifm-background-color: oklch(0.1689 0.0021 286.18);
   --ifm-navbar-background-color: lab(4.34002% .141293 -.518128);
   --ifm-footer-background-color: lab(4.34002% .141293 -.518128);
-  --ifm-font-color-base: oklch(0.985 0 0);
 
+  /* Borders */
   --ifm-color-border: rgba(255, 255, 255, 0.1);
+  --ifm-global-radius: 12px;
+
+  /* Code */
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
-  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+
+  /* Navbar */
+  --ifm-navbar-height: 70px;
+  --ifm-navbar-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
-/* Tables */
+/* --------------------------------------------------
+   TABLES
+-------------------------------------------------- */
 table {
   border-radius: 12px;
   overflow: hidden;
@@ -75,14 +56,12 @@ table thead tr {
 }
 
 table tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.02);
-}
-
-[data-theme='dark'] table tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Feature Cards */
+/* --------------------------------------------------
+   FEATURE CARDS
+-------------------------------------------------- */
 .feature-card {
   background: var(--ifm-background-surface-color);
   border-radius: 12px;
@@ -96,19 +75,19 @@ table tbody tr:hover {
   border-color: var(--ifm-font-color-base);
 }
 
-/* Code */
+/* --------------------------------------------------
+   CODE BLOCKS
+-------------------------------------------------- */
 code {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   padding: 0.2rem 0.4rem;
   font-size: 0.9em;
 }
 
-[data-theme='dark'] code {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Links */
+/* --------------------------------------------------
+   LINKS
+-------------------------------------------------- */
 a {
   transition: opacity 0.2s ease;
 }
@@ -117,7 +96,9 @@ a:hover {
   opacity: 0.7;
 }
 
-/* Headers */
+/* --------------------------------------------------
+   HEADERS
+-------------------------------------------------- */
 article h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -141,10 +122,12 @@ article h3 {
   font-weight: 600;
 }
 
-/* Navbar */
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
 .navbar {
-  backdrop-filter: blur(10px);
   border-bottom: 1px solid #212121;
+  background-color: var(--ifm-navbar-background-color) !important;
 }
 
 .navbar__link {
@@ -155,14 +138,108 @@ article h3 {
   color: white;
 }
 
-/* Sidebar */
-.theme-doc-sidebar-container {
-  border-right: 1px solid #212121;
+/* Mobile burger */
+@media (max-width: 996px) {
+  .navbar__toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff !important;
+  }
+
+  .navbar__toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke: #ffffff;
+  }
+
+  .navbar-sidebar,
+  .navbar-sidebar__brand,
+  .navbar-sidebar__items {
+    background-color: var(--ifm-navbar-background-color) !important;
+  }
+
+  .menu__link {
+    color: rgba(255, 255, 255, 0.85);
+  }
 }
 
-/* Footer */
+/* --------------------------------------------------
+   LEFT SIDEBAR (DOCS)
+-------------------------------------------------- */
+.theme-doc-sidebar-container {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Category titles */
+.menu__list-item-collapsible .menu__link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Normal items */
+.menu__link {
+  color: rgba(255, 255, 255, 0.65) !important;
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+}
+
+/* Hover */
+.menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Active */
+.menu__link--active {
+  background-color: rgba(255, 0, 0, 0.12) !important;
+  color: #ff0000 !important;
+  font-weight: 600;
+}
+
+/* Dropdown arrows */
+.menu__caret {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Space between sections */
+.menu__list {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+/* --------------------------------------------------
+   RIGHT SIDEBAR (TOC)
+-------------------------------------------------- */
+.theme-doc-toc-desktop {
+  padding-left: 1rem;
+}
+
+.table-of-contents__link {
+  color: rgba(255, 255, 255, 0.65) !important;
+  padding: 0.15rem 0;
+}
+
+.table-of-contents__link:hover {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.table-of-contents__link--active {
+  color: #ff0000 !important;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
 .footer {
   border-top: 1px solid var(--ifm-color-border);
+  background-color: var(--ifm-footer-background-color) !important;
 }
 
 .footer__link-item {

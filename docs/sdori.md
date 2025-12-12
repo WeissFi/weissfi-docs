@@ -149,15 +149,6 @@ Users may stake sDORI into:
 
 **Locked vaults that offer fixed, predictable yields.**
 
-#### 5. Partner Utilities
-
-Integrations such as:
-
-- FlowX fee reductions
-- DeepTrade analytics access
-- Tokeo priority routing
-- Nivra arbitration multipliers
-
 ---
 
 ### Economic Flywheel (V2)

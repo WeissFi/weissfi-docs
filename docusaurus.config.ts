@@ -62,6 +62,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     image: 'img/og-weissfi.png',
     metadata: [
       { name: 'og:title', content: 'Weiss Finance Documentation' },
@@ -103,6 +108,10 @@ const config: Config = {
             {
               label: 'Earn',
               to: '/earn',
+            },
+            {
+              label: 'sDORI',
+              to: '/sdori',
             },
             {
               label: 'Fees',
