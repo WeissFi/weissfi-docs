@@ -18,7 +18,7 @@
 - When opening a vault or updating interest rates, borrowers must pay **15 days of average protocol interest upfront**.
 - This interest is **added to the debt** at vault creation or rate modification.
 - Prevents abuse by ensuring commitment when adjusting rates.
-- **80% → Distributed to Earners** in the Stability Pool, **20% → Liquidity Providers/NFT Stakers**.
+- **15% → Stability Pool depositors**, **85% → Savings Pool (sDORI) holders**.
 
 ---
 
@@ -33,13 +33,13 @@
 ### 🔁 Interest Rate Modifications
 
 - Borrowers can **modify** their interest rate at any time.
-- Each interest rate modification adds **15 days of interest (at the new rate)** to the debt.
+- Each interest rate modification adds **15 days of average protocol interest (at the new rate)** to the debt.
 - This mechanism prevents abuse and ensures fair compensation to liquidity providers.
 
 **Interest Fee Distribution:**
 
-- **80% → Stability Pool (Earners)**
-- **20% → Liquidity Providers/NFT Stakers (Farming)**
+- **15% → Stability Pool (Earners)**
+- **85% → Savings Pool (sDORI)**
 
 ---
 
@@ -78,7 +78,7 @@
 | **Borrowing Fee**          | 0.75% on vault creation and interest rate updates, added to debt.           |
 | **Upfront Interest**       | 15 days of average protocol interest paid upfront at vault creation or interest rate change. |
 | **Ongoing Interest**       | Set by the borrower, accrues over time.                                     |
-| **Interest Modifications** | Each modification adds 15 days of interest + 0.75% fee to debt.             |
+| **Interest Modifications** | Each modification adds 15 days of average protocol interest (at the new rate) + 0.75% fee to debt.             |
 | **Liquidation Penalty**    | 10% of collateral taken upon liquidation.                                   |
 | **Liquidation Fee Split**  | 100% to Stability Pool, 0% to WeissFi team.                                 |
 | **Redemption Fee**         | 0.5% base + dynamic rate that halves every 6 hours to protect against large redemptions. |
