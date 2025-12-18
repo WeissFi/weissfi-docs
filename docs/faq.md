@@ -67,7 +67,7 @@ Yes — just go to the **dashboard** and click **Repay Loan**.
 
 By depositing **DORI into Stability Pools**, you earn:
 
-- **Interest Payments** – Borrowers pay interest, and **80% of that is distributed to depositors** while **20% goes to Liquidity Providers/NFT Stakers**.
+- **Protocol Fees** – Borrower-paid fees are split **15% to Stability Pool depositors** and **85% to Savings Pool (sDORI) holders**.
 - **Liquidation Gains** – When a borrower is liquidated, depositors receive their **collateral plus a 10% liquidation bonus**.
 
 ---

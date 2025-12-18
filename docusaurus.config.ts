@@ -121,10 +121,6 @@ const config: Config = {
               label: 'Redemption',
               to: '/redemption',
             },
-            {
-              label: 'Points System',
-              to: '/points-system',
-            },
             // {
             //   label: 'Vault Drop Campaign',
             //   to: '/vault-drop-campaign',

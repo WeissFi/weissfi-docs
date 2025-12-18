@@ -17,7 +17,6 @@ const sidebars: SidebarsConfig = {
         'sdori',
         'fees',
         'redemption',
-        'points-system',
         // 'vault-drop-campaign',
       ],
     },

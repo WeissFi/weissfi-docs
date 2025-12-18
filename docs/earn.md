@@ -6,8 +6,8 @@
 
 ### With Earn, you can:
 
-- **Earn Interest from Borrowers**  
-  80% of borrower-paid interest is distributed to depositors in DORI, ensuring market-driven returns.
+- **Earn Interest from Borrowers**
+  15% of borrower-paid interest is distributed to **Stability Pool depositors in DORI**, while **85% accrues to the Savings Pool (sDORI)**, keeping rewards aligned with sustainable protocol revenue.
 
 - **Real Yield – No Token Emissions**  
   Unlike other protocols that print tokens to reward depositors, WeissFi ensures a sustainable yield sourced directly from protocol fees and liquidations.
