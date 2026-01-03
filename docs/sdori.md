@@ -41,8 +41,8 @@ The Savings Pool contract manages:
 sDORI increases in value when:
 
 - **Borrowers pay interest**
-  - 85% of all interest goes to the Savings Pool
-  - 15% goes to the Stability Pool
+  - 85% of all interest goes to sDORI holders (Savings Pool)
+  - 15% goes to gDORI holders (Stability Pool)
 
 When interest arrives, the Pool updates the exchange rate:
 

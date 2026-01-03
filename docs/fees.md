@@ -16,7 +16,7 @@
 - When opening a vault or updating interest rates, borrowers must pay **15 days of average protocol interest upfront**.
 - This interest is **added to the debt** at vault creation or rate modification.
 - Prevents abuse by ensuring commitment when adjusting rates.
-- **15% → Stability Pool depositors**, **85% → Savings Pool (sDORI) holders**.
+- **85% → sDORI holders**, **15% → gDORI holders (Stability Pool)**.
 
 ---
 
@@ -36,21 +36,32 @@
 
 **Interest Fee Distribution:**
 
-- **15% → Stability Pool (Earners)**
-- **85% → Savings Pool (sDORI)**
+- **85% → sDORI holders**
+- **15% → gDORI holders (Stability Pool)**
 
 ---
 
 ## Liquidation Fees
 
 - If a borrower's **Loan-to-Value (LTV)** exceeds **83.33%** (120% MCR), their collateral is **automatically liquidated**.
-- A **10% liquidation penalty** is applied to the borrower's collateral.
+- A **10% liquidation bonus** is applied — Stability Pool depositors receive collateral at a 10% discount.
 - The borrower keeps any remaining collateral after liquidation.
 
-**Liquidation Fee Distribution:**
+**Liquidation Distribution:**
 
-- **100% → Stability Pool (Earners)**
-- **0% → WeissFi Team** (WeissFi team currently takes no fees on liquidation)
+- **100% → Stability Pool (gDORI holders)**
+
+---
+
+## Redistribution Fees
+
+- If the **Stability Pool is empty** during a liquidation, the debt and collateral are **redistributed** to other active borrowers.
+- A **20% redistribution fee** is applied to the redistributed collateral.
+
+**Redistribution Distribution:**
+
+- Remaining borrowers absorb the debt proportionally
+- The 20% fee compensates them for taking on additional risk
 
 ---
 
@@ -76,10 +87,10 @@
 | **Borrowing Fee**          | 0% – No borrowing fee.                                                      |
 | **Upfront Interest**       | 15 days of average protocol interest paid upfront at vault creation or interest rate change. |
 | **Ongoing Interest**       | Set by the borrower, accrues over time.                                     |
-| **Interest Modifications** | Each modification adds 15 days of average protocol interest (at the new rate) to debt.                         |
-| **Liquidation Penalty**    | 10% of collateral taken upon liquidation.                                   |
-| **Liquidation Fee Split**  | 100% to Stability Pool, 0% to WeissFi team.                                 |
-| **Redemption Fee**         | 0.5% base + dynamic rate that halves every 6 hours to protect against large redemptions. |
+| **Interest Split**         | 85% to sDORI holders, 15% to gDORI holders (Stability Pool).                |
+| **Liquidation Bonus**      | 10% bonus — Stability Pool depositors receive collateral at a 10% discount. |
+| **Redistribution Fee**     | 20% fee when debt is redistributed to other borrowers (if Stability Pool is empty). |
+| **Redemption Fee**         | 0.5% base + dynamic rate that halves every 6 hours. |
 
 ---
 
