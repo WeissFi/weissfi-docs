@@ -8,10 +8,8 @@
 
 ### 📌 Borrowing Fee
 
-- **0.75% fee** on the borrowed amount.
-- Applied when **opening a vault** and when **updating the interest rate**.
-- The fee is **added to the debt**, not deducted from the borrowed amount.
-- **100% → Allocated to the WeissFi team** for protocol sustainability.
+- **0% fee** on the borrowed amount.
+- No fee is applied when opening a vault or updating the interest rate.
 
 ### 💸 Upfront Interest Payment
 
@@ -75,10 +73,10 @@
 
 | **Fee Type**               | **Details**                                                                 |
 |----------------------------|------------------------------------------------------------------------------|
-| **Borrowing Fee**          | 0.75% on vault creation and interest rate updates, added to debt.           |
+| **Borrowing Fee**          | 0% – No borrowing fee.                                                      |
 | **Upfront Interest**       | 15 days of average protocol interest paid upfront at vault creation or interest rate change. |
 | **Ongoing Interest**       | Set by the borrower, accrues over time.                                     |
-| **Interest Modifications** | Each modification adds 15 days of average protocol interest (at the new rate) + 0.75% fee to debt.             |
+| **Interest Modifications** | Each modification adds 15 days of average protocol interest (at the new rate) to debt.                         |
 | **Liquidation Penalty**    | 10% of collateral taken upon liquidation.                                   |
 | **Liquidation Fee Split**  | 100% to Stability Pool, 0% to WeissFi team.                                 |
 | **Redemption Fee**         | 0.5% base + dynamic rate that halves every 6 hours to protect against large redemptions. |

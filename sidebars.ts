@@ -15,6 +15,7 @@ const sidebars: SidebarsConfig = {
         'borrow',
         'earn',
         'sdori',
+        'gdori',
         'fees',
         'redemption',
         // 'vault-drop-campaign',
