@@ -4,6 +4,55 @@
 
 **WeissFi** allows users to earn sustainable yield by depositing **DORI** into **Stability Pools**. Unlike traditional lending protocols that rely on inflationary token rewards, WeissFi provides **real yield** generated from borrower interest payments and liquidation gains.
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center'}}>
+    <div style={{background: 'linear-gradient(135deg, #10b981 0%, #3b82f6 100%)', padding: '1rem 1.5rem', borderRadius: '1rem', color: 'white', textAlign: 'center', minWidth: '120px'}}>
+      <div style={{fontSize: '1.5rem'}}>💵</div>
+      <div style={{fontWeight: 'bold'}}>DORI</div>
+      <div style={{fontSize: '0.8rem', opacity: 0.8}}>You Deposit</div>
+    </div>
+    <div style={{fontSize: '2rem', color: '#8b5cf6'}}>→</div>
+    <div style={{background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', padding: '1rem 1.5rem', borderRadius: '1rem', color: 'white', textAlign: 'center', minWidth: '120px'}}>
+      <div style={{fontSize: '1.5rem'}}>🏦</div>
+      <div style={{fontWeight: 'bold'}}>Stability Pool</div>
+      <div style={{fontSize: '0.8rem', opacity: 0.8}}>Earns Yield</div>
+    </div>
+    <div style={{fontSize: '2rem', color: '#ec4899'}}>→</div>
+    <div style={{background: 'linear-gradient(135deg, #f59e0b 0%, #10b981 100%)', padding: '1rem 1.5rem', borderRadius: '1rem', color: 'white', textAlign: 'center', minWidth: '120px'}}>
+      <div style={{fontSize: '1.5rem'}}>🎁</div>
+      <div style={{fontWeight: 'bold'}}>DORI + Collateral</div>
+      <div style={{fontSize: '0.8rem', opacity: 0.8}}>You Earn</div>
+    </div>
+  </div>
+</div>
+
+### Key Features
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', margin: '1.5rem 0'}}>
+  <div style={{background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>💸</div>
+    <div style={{fontWeight: 'bold', color: '#166534'}}>Real Yield</div>
+    <div style={{fontSize: '0.875rem', color: '#15803d'}}>No token emissions</div>
+  </div>
+  <div style={{background: '#faf5ff', border: '1px solid #e9d5ff', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>⚡</div>
+    <div style={{fontWeight: 'bold', color: '#7c3aed'}}>Instant Withdrawals</div>
+    <div style={{fontSize: '0.875rem', color: '#8b5cf6'}}>No lockups or delays</div>
+  </div>
+  <div style={{background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>🎯</div>
+    <div style={{fontWeight: 'bold', color: '#1d4ed8'}}>10% Bonus</div>
+    <div style={{fontSize: '0.875rem', color: '#3b82f6'}}>On liquidation gains</div>
+  </div>
+  <div style={{background: '#fefce8', border: '1px solid #fef08a', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>📈</div>
+    <div style={{fontWeight: 'bold', color: '#a16207'}}>Dual Rewards</div>
+    <div style={{fontSize: '0.875rem', color: '#ca8a04'}}>Interest + collateral</div>
+  </div>
+</div>
+
+---
+
 ### With Earn, you can:
 
 - **Earn Interest from Borrowers**
