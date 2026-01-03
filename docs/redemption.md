@@ -2,19 +2,66 @@
 
 ## What Are Redemptions?
 
-**Redemptions** are a key mechanism that helps maintain **DORI’s peg to $1** without relying on centralized assets or third parties.
+**Redemptions** are a key mechanism that helps maintain **DORI's peg to $1** without relying on centralized assets or third parties.
 
-A **redemption** allows a user to **swap DORI for collateral at face value** 
+A **redemption** allows a user to **swap DORI for collateral at face value**
 
 (1 DORI = $1 worth of collateral). When the price of DORI falls below $1, arbitrageurs can redeem DORI for collateral, reducing the DORI supply and helping restore its peg.
 
+<div style={{display: 'flex', justifyContent: 'center', margin: '2rem 0'}}>
+  <div style={{display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center'}}>
+    <div style={{background: 'linear-gradient(135deg, #10b981 0%, #3b82f6 100%)', padding: '1rem 1.5rem', borderRadius: '1rem', color: 'white', textAlign: 'center', minWidth: '120px'}}>
+      <div style={{fontSize: '1.5rem'}}>💵</div>
+      <div style={{fontWeight: 'bold'}}>DORI</div>
+      <div style={{fontSize: '0.8rem', opacity: 0.8}}>You Send</div>
+    </div>
+    <div style={{fontSize: '2rem', color: '#8b5cf6'}}>→</div>
+    <div style={{background: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', padding: '1rem 1.5rem', borderRadius: '1rem', color: 'white', textAlign: 'center', minWidth: '120px'}}>
+      <div style={{fontSize: '1.5rem'}}>🔄</div>
+      <div style={{fontWeight: 'bold'}}>WeissFi Protocol</div>
+      <div style={{fontSize: '0.8rem', opacity: 0.8}}>Processes Redemption</div>
+    </div>
+    <div style={{fontSize: '2rem', color: '#ec4899'}}>→</div>
+    <div style={{background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)', padding: '1rem 1.5rem', borderRadius: '1rem', color: 'white', textAlign: 'center', minWidth: '120px'}}>
+      <div style={{fontSize: '1.5rem'}}>🔷</div>
+      <div style={{fontWeight: 'bold'}}>SUI / haSUI / xBTC</div>
+      <div style={{fontSize: '0.8rem', opacity: 0.8}}>You Receive</div>
+    </div>
+  </div>
+</div>
+
+### Key Features
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', margin: '1.5rem 0'}}>
+  <div style={{background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>💱</div>
+    <div style={{fontWeight: 'bold', color: '#166534'}}>1:1 Face Value</div>
+    <div style={{fontSize: '0.875rem', color: '#15803d'}}>1 DORI = $1 of collateral</div>
+  </div>
+  <div style={{background: '#faf5ff', border: '1px solid #e9d5ff', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>📊</div>
+    <div style={{fontWeight: 'bold', color: '#7c3aed'}}>Peg Stability</div>
+    <div style={{fontSize: '0.875rem', color: '#8b5cf6'}}>Maintains DORI at $1</div>
+  </div>
+  <div style={{background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>🎯</div>
+    <div style={{fontWeight: 'bold', color: '#1d4ed8'}}>Arbitrage Opportunity</div>
+    <div style={{fontSize: '0.875rem', color: '#3b82f6'}}>Profit when DORI < $1</div>
+  </div>
+  <div style={{background: '#fefce8', border: '1px solid #fef08a', borderRadius: '0.75rem', padding: '1rem'}}>
+    <div style={{fontSize: '1.25rem', marginBottom: '0.5rem'}}>🔐</div>
+    <div style={{fontWeight: 'bold', color: '#a16207'}}>Decentralized</div>
+    <div style={{fontSize: '0.875rem', color: '#ca8a04'}}>No centralized assets needed</div>
+  </div>
+</div>
+
 ### How It Works:
 
-1. The redeemer sends **DORI** to the protocol.  
-2. In return, they receive **collateral** (the redemption fee is deducted from the borrower's collateral).  
-3. Redemptions are processed from **borrowers with the lowest collateral ratio**.  
+1. The redeemer sends **DORI** to the protocol.
+2. In return, they receive **collateral** (the redemption fee is deducted from the borrower's collateral).
+3. Redemptions are processed from **borrowers with the lowest collateral ratio**.
 
-> ✅ This ensures **market-driven stability** and maintains the DORI peg.
+> This ensures **market-driven stability** and maintains the DORI peg.
 
 ---
 
