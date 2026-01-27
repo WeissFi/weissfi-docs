@@ -54,7 +54,7 @@ WeissFi uses the following practices to reduce risk — **not a guarantee of saf
 - **Conservative protocol parameters** — collateralization thresholds and iterative rollouts.
 - **Monitoring & alerting** — vault health, liquidation execution, and system status.
 - **Operational automation** — liquidation workflows and Stability Pool settlement / compounding.
-- **Transparent on-chain state** — public explorer links (see [Mainnet Package IDs](/docs/mainnet-package)).
+- **Transparent on-chain state** — public explorer links (see [Mainnet Package IDs](/mainnet-package)).
 
 ---
 
@@ -67,7 +67,7 @@ WeissFi uses the following practices to reduce risk — **not a guarantee of saf
 | Website | [weiss.finance](https://www.weissfi.com) |
 | Explorer — Sui Package | [View on SuiScan](https://suiscan.xyz/mainnet/object/0xc436a8ccc36e649e0fd8c7cec88ca89747b69ba5bdefb15be2f93ae1ae632800) |
 
-For a full list of contract addresses, see the [Mainnet Package IDs](/docs/mainnet-package) page.
+For a full list of contract addresses, see the [Mainnet Package IDs](/mainnet-package) page.
 
 ---
 
