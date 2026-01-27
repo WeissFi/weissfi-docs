@@ -28,6 +28,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'oracles',
         'mainnet-package',
+        'security',
         'media-kit',
         'roadmap-feedback',
         'analytics',
